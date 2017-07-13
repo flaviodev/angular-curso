@@ -1,0 +1,17 @@
+.menu {
+  background: #bcbcbc;
+  color: #000000;
+  position: fixed;
+  top: 51px;
+  bottom: 0;
+  width: 20%;
+  min-width: 150px;
+}
+ 
+.menu ul {
+  font-size: 15px;
+  line-height: 2;
+  font-weight: 300;
+  padding-top: 5px;
+  list-style: none;
+}
