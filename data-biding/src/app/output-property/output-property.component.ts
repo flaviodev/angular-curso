@@ -11,18 +11,19 @@ export class OutputPropertyComponent implements OnInit {
 
   @Output() mudouValor = new EventEmitter();
 
+  // acessando a variável local do input e alterando diretamente o DOM
   @ViewChild('campoInput') campoValorInput: ElementRef;
 
   incrementa() {
     //this.valor++;
     this.campoValorInput.nativeElement.value++;
-    this.mudouValor.emit({novoValor:this.valor});
+    this.mudouValor.emit({novoValor:this.campoValorInput.nativeElement.value});
   }
 
   decrementa() {
     //this.valor--;
     this.campoValorInput.nativeElement.value--;
-    this.mudouValor.emit({novoValor:this.valor});
+    this.mudouValor.emit({novoValor:this.campoValorInput.nativeElement.value});
   }
 
 
