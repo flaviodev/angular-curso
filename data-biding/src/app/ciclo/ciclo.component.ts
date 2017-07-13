@@ -6,6 +6,8 @@ import { Component, OnInit, OnChanges, DoCheck, AfterContentInit,
   templateUrl: './ciclo.component.html',
   styleUrls: ['./ciclo.component.css']
 })
+
+// boa prática de programação em angular, declarar as interfaces do ciclo de vida
 export class CicloComponent implements OnInit, OnChanges, DoCheck, AfterContentInit, 
     AfterContentChecked, AfterViewInit, AfterViewChecked, OnDestroy  {
 
@@ -15,10 +17,14 @@ export class CicloComponent implements OnInit, OnChanges, DoCheck, AfterContentI
     this.log('constructor');
   }
 
+  // utilizado usualmente  para realizar  comunicação com serviços do backend quando NÃO há
+  // property biding
   ngOnInit() {
     this.log('ngOnInit');
   }
 
+  // utilizado usualmente  para realizar  comunicação com serviços do backend quando há
+  // property biding
   ngOnChanges() {
     this.log('ngOnChanges');
   }
