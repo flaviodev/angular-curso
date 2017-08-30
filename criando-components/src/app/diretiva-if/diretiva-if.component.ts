@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DiretivaIfComponent implements OnInit {
 
+  minhaVariavel: string;
+
   constructor() { }
 
   ngOnInit() {
