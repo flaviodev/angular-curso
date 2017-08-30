@@ -4,7 +4,7 @@ import { Component, OnInit, OnChanges, DoCheck, AfterContentInit,
 @Component({
   selector: 'app-ciclo',
   templateUrl: './ciclo.component.html',
-  styleUrls: ['./ciclo.component.css']
+  styleUrls: ['./ciclo.component.scss']
 })
 
 // boa prática de programação em angular, declarar as interfaces do ciclo de vida
